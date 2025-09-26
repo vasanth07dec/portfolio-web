@@ -1,0 +1,301 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import Ant Design styles */
+@import '~antd/dist/reset.css';
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
+    background: #0a0a0a;
+    color: #e5e5e5;
+  }
+}
+
+@layer utilities {
+  .animate-blob {
+    animation: blob 7s infinite;
+  }
+  
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+  
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
+  
+  .animate-gradient-x {
+    animation: gradient-x 15s ease infinite;
+    background-size: 400% 400%;
+  }
+  
+  @keyframes blob {
+    0% {
+      transform: translate(0px, 0px) scale(1);
+    }
+    33% {
+      transform: translate(30px, -50px) scale(1.1);
+    }
+    66% {
+      transform: translate(-20px, 20px) scale(0.9);
+    }
+    100% {
+      transform: translate(0px, 0px) scale(1);
+    }
+  }
+  
+  @keyframes gradient-x {
+    0%, 100% {
+      background-size: 200% 200%;
+      background-position: left center;
+    }
+    50% {
+      background-size: 200% 200%;
+      background-position: right center;
+    }
+  }
+  
+  /* Terminal-inspired scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #1a1a1a;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #4ade80;
+    border-radius: 4px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #22c55e;
+  }
+}
+
+/* Dark theme overrides for Ant Design */
+.ant-layout {
+  background: #0a0a0a !important;
+}
+
+.ant-layout-header {
+  padding: 0;
+  background: rgba(10, 10, 10, 0.95) !important;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #262626;
+}
+
+.ant-menu-horizontal {
+  border-bottom: none;
+  background: transparent !important;
+}
+
+.ant-menu-horizontal .ant-menu-item {
+  color: #a3a3a3 !important;
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 500;
+}
+
+.ant-menu-horizontal .ant-menu-item:hover,
+.ant-menu-horizontal .ant-menu-item-active,
+.ant-menu-horizontal .ant-menu-item-selected {
+  color: #4ade80 !important;
+  border-bottom-color: #4ade80 !important;
+}
+
+.ant-card {
+  border-radius: 8px;
+  background: #111111 !important;
+  border: 1px solid #262626 !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
+}
+
+.ant-card:hover {
+  border-color: #4ade80 !important;
+  box-shadow: 0 8px 25px rgba(74, 222, 128, 0.1) !important;
+}
+
+.ant-btn-primary {
+  background: #4ade80 !important;
+  border: none !important;
+  color: #0a0a0a !important;
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 600;
+}
+
+.ant-btn-primary:hover {
+  background: #22c55e !important;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(74, 222, 128, 0.3) !important;
+}
+
+.ant-btn {
+  font-family: 'JetBrains Mono', monospace;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.ant-btn-default {
+  background: transparent !important;
+  border: 1px solid #404040 !important;
+  color: #e5e5e5 !important;
+}
+
+.ant-btn-default:hover {
+  border-color: #4ade80 !important;
+  color: #4ade80 !important;
+}
+
+/* Typography overrides */
+.ant-typography h1,
+.ant-typography h2,
+.ant-typography h3,
+.ant-typography h4,
+.ant-typography h5 {
+  color: #f5f5f5 !important;
+  font-family: 'JetBrains Mono', monospace !important;
+  font-weight: 700 !important;
+}
+
+.ant-typography {
+  color: #a3a3a3 !important;
+}
+
+/* Form styling */
+.ant-form-item-label > label {
+  font-weight: 600;
+  color: #e5e5e5 !important;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.ant-input,
+.ant-input-affix-wrapper {
+  border-radius: 6px;
+  border: 1px solid #404040 !important;
+  background: #1a1a1a !important;
+  color: #e5e5e5 !important;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.ant-input:focus,
+.ant-input-affix-wrapper:focus,
+.ant-input-affix-wrapper-focused {
+  border-color: #4ade80 !important;
+  box-shadow: 0 0 0 2px rgba(74, 222, 128, 0.1) !important;
+}
+
+.ant-input::placeholder {
+  color: #525252 !important;
+}
+
+/* Tag styling */
+.ant-tag {
+  border-radius: 4px;
+  font-weight: 500;
+  padding: 2px 8px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  background: #1a1a1a !important;
+  border: 1px solid #404040 !important;
+  color: #a3a3a3 !important;
+}
+
+/* Terminal-inspired accent colors */
+.terminal-green { color: #4ade80; }
+.terminal-blue { color: #60a5fa; }
+.terminal-purple { color: #a78bfa; }
+.terminal-orange { color: #fb923c; }
+.terminal-red { color: #f87171; }
+.terminal-yellow { color: #fbbf24; }
+
+/* Focus styles for accessibility */
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+a:focus-visible {
+  outline: 2px solid #4ade80;
+  outline-offset: 2px;
+}
+
+/* Smooth transitions */
+* {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+}
+
+/* Terminal-inspired backgrounds */
+.terminal-bg {
+  background: linear-gradient(135deg, #111111 0%, #1a1a1a 100%);
+}
+
+.terminal-card {
+  background: #111111;
+  border: 1px solid #262626;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Avatar styling */
+.ant-avatar {
+  border: 2px solid #4ade80;
+  box-shadow: 0 4px 12px rgba(74, 222, 128, 0.2);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .ant-col {
+    margin-bottom: 16px;
+  }
+  
+  .ant-space-vertical {
+    width: 100%;
+  }
+}
+
+/* Terminal prompt styling */
+.terminal-prompt::before {
+  content: "$ ";
+  color: #4ade80;
+  font-weight: bold;
+}
+
+/* Code block styling */
+code {
+  background: #1a1a1a !important;
+  color: #4ade80 !important;
+  padding: 2px 6px !important;
+  border-radius: 4px !important;
+  font-family: 'JetBrains Mono', monospace !important;
+  font-size: 13px !important;
+  border: 1px solid #262626 !important;
+}
+
+/* Drawer dark theme */
+.ant-drawer-content {
+  background: #111111 !important;
+}
+
+.ant-drawer-header {
+  background: #111111 !important;
+  border-bottom: 1px solid #262626 !important;
+}
+
+.ant-drawer-title {
+  color: #f5f5f5 !important;
+  font-family: 'JetBrains Mono', monospace !important;
+}
+
+.ant-drawer-close {
+  color: #a3a3a3 !important;
+}
+
+.ant-drawer-close:hover {
+  color: #4ade80 !important;
+}

@@ -1,11 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Layout, Menu, Button, Drawer } from "antd";
-import {
-  MenuOutlined,
-  CodeOutlined,
-  DatabaseOutlined,
-  GlobalOutlined,
-} from "@ant-design/icons";
+import { MenuOutlined, CodeOutlined } from "@ant-design/icons";
 
 const { Header: AntHeader } = Layout;
 
@@ -53,7 +48,7 @@ const Header: React.FC = () => {
             <CodeOutlined className="text-2xl text-[rgb(158,206,106)]" />
             <div className="absolute -top-1 -right-1 w-2 h-2 bg-[rgb(158,206,106)] rounded-full animate-pulse"></div>
           </div>
-          <span className="text-xl font-bold text-[rgb(158,206,106)] font-mono">
+          <span className="text-xl font-bold text-[rgb(158,206,106)] font-cascadia">
             vasanth@dev-portfolio:~
           </span>
         </div>

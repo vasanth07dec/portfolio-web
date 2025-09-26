@@ -55,16 +55,16 @@ const Footer: React.FC = () => {
                 <CodeOutlined className="text-2xl text-[rgb(158,206,106)]" />
                 <div className="absolute -top-1 -right-1 w-2 h-2 bg-[rgb(158,206,106)] rounded-full animate-pulse"></div>
               </div>
-              <span className="text-xl font-bold text-[rgb(158,206,106)] font-mono">
+              <span className="text-xl font-bold text-[rgb(158,206,106)] font-cascadia">
                 vasanth@dev-portfolio:~
               </span>
             </div>
-            <Text className="text-gray-400 font-mono leading-relaxed block mb-4">
+            <Text className="text-gray-400 font-cascadia leading-relaxed block mb-4">
               Full Stack Developer passionate about creating exceptional digital
               experiences with modern technologies. Building scalable
               applications with clean, efficient code.
             </Text>
-            <div className="flex items-center space-x-2 text-sm font-mono">
+            <div className="flex items-center space-x-2 text-sm font-cascadia">
               <div className="w-2 h-2 bg-[rgb(158,206,106)] rounded-full animate-pulse"></div>
               <Text className="text-[rgb(158,206,106)]">
                 Available for new projects
@@ -74,7 +74,7 @@ const Footer: React.FC = () => {
 
           {/* Quick Links */}
           <div>
-            <Text className="text-white font-mono font-semibold mb-4 block">
+            <Text className="text-white font-cascadia font-semibold mb-4 block">
               Quick Links
             </Text>
             <div className="space-y-2">
@@ -82,7 +82,7 @@ const Footer: React.FC = () => {
                 <div key={index}>
                   <Link
                     href={link.href}
-                    className="text-gray-400 hover:text-[rgb(158,206,106)] font-mono text-sm transition-colors duration-200"
+                    className="text-gray-400 hover:text-[rgb(158,206,106)] font-cascadia text-sm transition-colors duration-200"
                   >
                     {link.label}
                   </Link>
@@ -93,10 +93,10 @@ const Footer: React.FC = () => {
 
           {/* System Info */}
           <div>
-            <Text className="text-white font-mono font-semibold mb-4 block">
+            <Text className="text-white font-cascadia font-semibold mb-4 block">
               System Info
             </Text>
-            <div className="space-y-2 text-sm font-mono">
+            <div className="space-y-2 text-sm font-cascadia">
               <div className="flex items-center space-x-2">
                 <Text className="text-[rgb(122,162,247)]">OS:</Text>
                 <Text className="text-gray-400">Ubuntu 24.04</Text>
@@ -115,11 +115,11 @@ const Footer: React.FC = () => {
         <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           {/* Copyright */}
           <div className="flex items-center space-x-2">
-            <Text className="text-gray-400 font-mono text-sm">
+            <Text className="text-gray-400 font-cascadia text-sm">
               © {currentYear} Vasanth. Made with
             </Text>
             <HeartFilled className="text-red-500 text-sm" />
-            <Text className="text-gray-400 font-mono text-sm">
+            <Text className="text-gray-400 font-cascadia text-sm">
               and lots of ☕
             </Text>
           </div>
@@ -143,7 +143,7 @@ const Footer: React.FC = () => {
 
         {/* Terminal Status Bar */}
         <div className="mt-8 p-4 bg-gray-900 rounded-lg border border-gray-700">
-          <div className="flex items-center justify-between text-xs font-mono">
+          <div className="flex items-center justify-between text-xs font-cascadia">
             <div className="flex items-center space-x-4">
               <div className="flex items-center space-x-2">
                 <div className="w-2 h-2 bg-[rgb(158,206,106)] rounded-full"></div>

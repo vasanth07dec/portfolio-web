@@ -3,15 +3,16 @@
 @tailwind utilities;
 
 /* Import Ant Design styles */
-@import '~antd/dist/reset.css';
+@import "~antd/dist/reset.css";
 
 @layer base {
   html {
     scroll-behavior: smooth;
   }
-  
+
   body {
-    font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
+    font-family: "JetBrains Mono", "Fira Code", "SF Mono", Monaco,
+      "Cascadia Code", "Roboto Mono", Consolas, "Courier New", monospace;
     background: #0a0a0a;
     color: #e5e5e5;
   }
@@ -21,20 +22,20 @@
   .animate-blob {
     animation: blob 7s infinite;
   }
-  
+
   .animation-delay-2000 {
     animation-delay: 2s;
   }
-  
+
   .animation-delay-4000 {
     animation-delay: 4s;
   }
-  
+
   .animate-gradient-x {
     animation: gradient-x 15s ease infinite;
     background-size: 400% 400%;
   }
-  
+
   @keyframes blob {
     0% {
       transform: translate(0px, 0px) scale(1);
@@ -49,9 +50,10 @@
       transform: translate(0px, 0px) scale(1);
     }
   }
-  
+
   @keyframes gradient-x {
-    0%, 100% {
+    0%,
+    100% {
       background-size: 200% 200%;
       background-position: left center;
     }
@@ -60,21 +62,21 @@
       background-position: right center;
     }
   }
-  
+
   /* Terminal-inspired scrollbar */
   ::-webkit-scrollbar {
     width: 8px;
   }
-  
+
   ::-webkit-scrollbar-track {
     background: #1a1a1a;
   }
-  
+
   ::-webkit-scrollbar-thumb {
     background: #4ade80;
     border-radius: 4px;
   }
-  
+
   ::-webkit-scrollbar-thumb:hover {
     background: #22c55e;
   }
@@ -99,7 +101,7 @@
 
 .ant-menu-horizontal .ant-menu-item {
   color: #a3a3a3 !important;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: "JetBrains Mono", monospace;
   font-weight: 500;
 }
 
@@ -126,7 +128,7 @@
   background: #4ade80 !important;
   border: none !important;
   color: #0a0a0a !important;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: "JetBrains Mono", monospace;
   font-weight: 600;
 }
 
@@ -137,7 +139,7 @@
 }
 
 .ant-btn {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: "JetBrains Mono", monospace;
   border-radius: 6px;
   font-weight: 500;
 }
@@ -160,7 +162,7 @@
 .ant-typography h4,
 .ant-typography h5 {
   color: #f5f5f5 !important;
-  font-family: 'JetBrains Mono', monospace !important;
+  font-family: "JetBrains Mono", monospace !important;
   font-weight: 700 !important;
 }
 
@@ -172,7 +174,7 @@
 .ant-form-item-label > label {
   font-weight: 600;
   color: #e5e5e5 !important;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: "JetBrains Mono", monospace;
 }
 
 .ant-input,
@@ -181,7 +183,7 @@
   border: 1px solid #404040 !important;
   background: #1a1a1a !important;
   color: #e5e5e5 !important;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: "JetBrains Mono", monospace;
 }
 
 .ant-input:focus,
@@ -200,7 +202,7 @@
   border-radius: 4px;
   font-weight: 500;
   padding: 2px 8px;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: "JetBrains Mono", monospace;
   font-size: 11px;
   background: #1a1a1a !important;
   border: 1px solid #404040 !important;
@@ -208,12 +210,24 @@
 }
 
 /* Terminal-inspired accent colors */
-.terminal-green { color: #4ade80; }
-.terminal-blue { color: #60a5fa; }
-.terminal-purple { color: #a78bfa; }
-.terminal-orange { color: #fb923c; }
-.terminal-red { color: #f87171; }
-.terminal-yellow { color: #fbbf24; }
+.terminal-green {
+  color: #4ade80;
+}
+.terminal-blue {
+  color: #60a5fa;
+}
+.terminal-purple {
+  color: #a78bfa;
+}
+.terminal-orange {
+  color: #fb923c;
+}
+.terminal-red {
+  color: #f87171;
+}
+.terminal-yellow {
+  color: #fbbf24;
+}
 
 /* Focus styles for accessibility */
 button:focus-visible,
@@ -226,7 +240,9 @@ a:focus-visible {
 
 /* Smooth transitions */
 * {
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter,
+    backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 200ms;
 }
@@ -253,7 +269,7 @@ a:focus-visible {
   .ant-col {
     margin-bottom: 16px;
   }
-  
+
   .ant-space-vertical {
     width: 100%;
   }
@@ -272,7 +288,7 @@ code {
   color: #4ade80 !important;
   padding: 2px 6px !important;
   border-radius: 4px !important;
-  font-family: 'JetBrains Mono', monospace !important;
+  font-family: "JetBrains Mono", monospace !important;
   font-size: 13px !important;
   border: 1px solid #262626 !important;
 }
@@ -289,7 +305,7 @@ code {
 
 .ant-drawer-title {
   color: #f5f5f5 !important;
-  font-family: 'JetBrains Mono', monospace !important;
+  font-family: "JetBrains Mono", monospace !important;
 }
 
 .ant-drawer-close {

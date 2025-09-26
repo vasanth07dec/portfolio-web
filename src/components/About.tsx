@@ -58,12 +58,12 @@ const About: React.FC = () => {
         <div className="text-center mb-16">
           <Title
             level={2}
-            className="text-4xl font-bold text-white mb-4 font-mono"
+            className="text-4xl font-bold text-white mb-4 font-cascadia"
           >
             About Me
           </Title>
           <div className="w-20 h-1 bg-[rgb(158,206,106)] mx-auto mb-6"></div>
-          <Text className="text-xl text-gray-400 max-w-3xl mx-auto block font-mono">
+          <Text className="text-xl text-gray-400 max-w-3xl mx-auto block font-cascadia">
             Passionate developer crafting digital solutions
           </Text>
         </div>
@@ -77,35 +77,41 @@ const About: React.FC = () => {
                 src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400"
                 className="mb-4 border-4 border-[rgb(158,206,106)] shadow-lg"
               />
-              <Title level={3} className="text-white mb-2 font-mono">
+              <Title level={3} className="text-white mb-2 font-cascadia">
                 Vasanth
               </Title>
-              <Text className="text-[rgb(158,206,106)] text-lg font-mono">
+              <Text className="text-[rgb(158,206,106)] text-lg font-cascadia">
                 Full Stack Developer
               </Text>
               <div className="mt-2">
-                <Text className="text-[rgb(122,162,247)] font-mono">
+                <Text className="text-[rgb(122,162,247)] font-cascadia">
                   React • Node.js • TypeScript
                 </Text>
               </div>
             </div>
 
             <div className="space-y-4">
-              <Title level={4} className="text-[rgb(158,206,106)] font-mono">
+              <Title
+                level={4}
+                className="text-[rgb(158,206,106)] font-cascadia"
+              >
                 About Me
               </Title>
-              <Paragraph className="text-gray-400 leading-relaxed font-mono">
+              <Paragraph className="text-gray-400 leading-relaxed font-cascadia">
                 I'm a passionate Full Stack Developer with 1+ years of
                 experience building scalable web applications. I love creating
                 efficient, clean code and turning complex problems into simple,
                 beautiful solutions.
               </Paragraph>
 
-              <Title level={4} className="text-[rgb(158,206,106)] font-mono">
+              <Title
+                level={4}
+                className="text-[rgb(158,206,106)] font-cascadia"
+              >
                 Development Setup
               </Title>
               <div className="bg-gray-800 p-4 rounded-lg border border-gray-600">
-                <div className="text-[rgb(122,162,247)] font-mono text-sm space-y-1">
+                <div className="text-[rgb(122,162,247)] font-cascadia text-sm space-y-1">
                   <div>OS: Ubuntu 24.04 LTS + Omakub</div>
                   <div>Editor: Neovim + LazyVim</div>
                   <div>Terminal: Alacritty + Zsh</div>
@@ -125,10 +131,10 @@ const About: React.FC = () => {
                 <div className="text-[rgb(158,206,106)] text-3xl mb-3">
                   {stat.icon}
                 </div>
-                <Title level={2} className="text-white mb-2 font-mono">
+                <Title level={2} className="text-white mb-2 font-cascadia">
                   {stat.value}
                 </Title>
-                <Text className="text-gray-400 font-mono text-sm">
+                <Text className="text-gray-400 font-cascadia text-sm">
                   {stat.label}
                 </Text>
               </Card>
@@ -139,7 +145,10 @@ const About: React.FC = () => {
         {/* Journey Timeline */}
         <Card className="bg-[rgb(26,27,38)] border border-gray-700 shadow-xl">
           <div className="mb-8">
-            <Title level={3} className="text-white mb-4 font-mono text-center">
+            <Title
+              level={3}
+              className="text-white mb-4 font-cascadia text-center"
+            >
               My Journey
             </Title>
           </div>
@@ -148,15 +157,15 @@ const About: React.FC = () => {
             {journey.map((item, index) => (
               <div key={index} className="flex items-start space-x-4">
                 <div className="flex-shrink-0">
-                  <div className="w-12 h-12 bg-[rgb(158,206,106)] rounded-full flex items-center justify-center text-black font-bold font-mono">
+                  <div className="w-12 h-12 bg-[rgb(158,206,106)] rounded-full flex items-center justify-center text-black font-bold font-cascadia">
                     {item.year.slice(-2)}
                   </div>
                 </div>
                 <div className="flex-1">
-                  <Title level={4} className="text-white mb-2 font-mono">
+                  <Title level={4} className="text-white mb-2 font-cascadia">
                     {item.title}
                   </Title>
-                  <Text className="text-gray-400 font-mono">
+                  <Text className="text-gray-400 font-cascadia">
                     {item.description}
                   </Text>
                 </div>

@@ -94,12 +94,12 @@ const Contact: React.FC = () => {
         <div className="text-center mb-16">
           <Title
             level={2}
-            className="text-4xl font-bold text-white mb-4 font-mono"
+            className="text-4xl font-bold text-white mb-4 font-cascadia"
           >
             Get In Touch
           </Title>
           <div className="w-20 h-1 bg-[rgb(158,206,106)] mx-auto mb-6"></div>
-          <Text className="text-xl text-gray-400 max-w-3xl mx-auto block font-mono">
+          <Text className="text-xl text-gray-400 max-w-3xl mx-auto block font-cascadia">
             Ready to start your next project? Let's build something amazing
             together
           </Text>
@@ -112,11 +112,11 @@ const Contact: React.FC = () => {
               <div className="mb-6">
                 <Title
                   level={3}
-                  className="text-[rgb(158,206,106)] mb-2 font-mono"
+                  className="text-[rgb(158,206,106)] mb-2 font-cascadia"
                 >
                   Send Message
                 </Title>
-                <Text className="text-[rgb(122,162,247)] font-mono">
+                <Text className="text-[rgb(122,162,247)] font-cascadia">
                   Fill out the form below and I'll get back to you within 24
                   hours
                 </Text>
@@ -133,7 +133,9 @@ const Contact: React.FC = () => {
                     <Form.Item
                       name="name"
                       label={
-                        <span className="text-gray-300 font-mono">Name</span>
+                        <span className="text-gray-300 font-cascadia">
+                          Name
+                        </span>
                       }
                       rules={[
                         { required: true, message: "Please enter your name" },
@@ -142,7 +144,7 @@ const Contact: React.FC = () => {
                       <Input
                         prefix={<UserOutlined className="text-gray-400" />}
                         placeholder="Your full name"
-                        className="bg-gray-800 border-gray-600 text-white font-mono"
+                        className="bg-gray-800 border-gray-600 text-white font-cascadia"
                         size="large"
                       />
                     </Form.Item>
@@ -151,7 +153,9 @@ const Contact: React.FC = () => {
                     <Form.Item
                       name="email"
                       label={
-                        <span className="text-gray-300 font-mono">Email</span>
+                        <span className="text-gray-300 font-cascadia">
+                          Email
+                        </span>
                       }
                       rules={[
                         { required: true, message: "Please enter your email" },
@@ -164,7 +168,7 @@ const Contact: React.FC = () => {
                       <Input
                         prefix={<MailOutlined className="text-gray-400" />}
                         placeholder="your.email@example.com"
-                        className="bg-gray-800 border-gray-600 text-white font-mono"
+                        className="bg-gray-800 border-gray-600 text-white font-cascadia"
                         size="large"
                       />
                     </Form.Item>
@@ -174,7 +178,7 @@ const Contact: React.FC = () => {
                 <Form.Item
                   name="subject"
                   label={
-                    <span className="text-gray-300 font-mono">Subject</span>
+                    <span className="text-gray-300 font-cascadia">Subject</span>
                   }
                   rules={[
                     { required: true, message: "Please enter a subject" },
@@ -182,7 +186,7 @@ const Contact: React.FC = () => {
                 >
                   <Input
                     placeholder="Project discussion, collaboration, etc."
-                    className="bg-gray-800 border-gray-600 text-white font-mono"
+                    className="bg-gray-800 border-gray-600 text-white font-cascadia"
                     size="large"
                   />
                 </Form.Item>
@@ -190,7 +194,7 @@ const Contact: React.FC = () => {
                 <Form.Item
                   name="message"
                   label={
-                    <span className="text-gray-300 font-mono">Message</span>
+                    <span className="text-gray-300 font-cascadia">Message</span>
                   }
                   rules={[
                     { required: true, message: "Please enter your message" },
@@ -199,7 +203,7 @@ const Contact: React.FC = () => {
                   <TextArea
                     rows={6}
                     placeholder="Tell me about your project, requirements, timeline, budget, etc."
-                    className="bg-gray-800 border-gray-600 text-white font-mono"
+                    className="bg-gray-800 border-gray-600 text-white font-cascadia"
                   />
                 </Form.Item>
 
@@ -210,7 +214,7 @@ const Contact: React.FC = () => {
                     loading={loading}
                     icon={<SendOutlined />}
                     size="large"
-                    className="bg-[rgb(158,206,106)] hover:bg-[rgb(158,206,106)]/80 border-none text-black font-mono w-full sm:w-auto"
+                    className="bg-[rgb(158,206,106)] hover:bg-[rgb(158,206,106)]/80 border-none text-black font-cascadia w-full sm:w-auto"
                   >
                     {loading ? "Sending..." : "Send Message"}
                   </Button>
@@ -226,7 +230,7 @@ const Contact: React.FC = () => {
               <Card className="bg-[rgb(26,27,38)] border border-gray-700 shadow-xl">
                 <Title
                   level={4}
-                  className="text-[rgb(158,206,106)] mb-6 font-mono"
+                  className="text-[rgb(158,206,106)] mb-6 font-cascadia"
                 >
                   Contact Information
                 </Title>
@@ -240,12 +244,12 @@ const Contact: React.FC = () => {
                         {info.icon}
                       </div>
                       <div>
-                        <Text className="text-[rgb(122,162,247)] font-mono text-sm block">
+                        <Text className="text-[rgb(122,162,247)] font-cascadia text-sm block">
                           {info.label}
                         </Text>
                         <a
                           href={info.link}
-                          className="text-white hover:text-[rgb(158,206,106)] font-mono transition-colors"
+                          className="text-white hover:text-[rgb(158,206,106)] font-cascadia transition-colors"
                         >
                           {info.value}
                         </a>
@@ -259,7 +263,7 @@ const Contact: React.FC = () => {
               <Card className="bg-[rgb(26,27,38)] border border-gray-700 shadow-xl">
                 <Title
                   level={4}
-                  className="text-[rgb(158,206,106)] mb-6 font-mono"
+                  className="text-[rgb(158,206,106)] mb-6 font-cascadia"
                 >
                   Social Links
                 </Title>
@@ -282,26 +286,26 @@ const Contact: React.FC = () => {
               <Card className="bg-[rgb(26,27,38)] border border-gray-700 shadow-xl">
                 <Title
                   level={4}
-                  className="text-[rgb(158,206,106)] mb-4 font-mono"
+                  className="text-[rgb(158,206,106)] mb-4 font-cascadia"
                 >
                   Availability Status
                 </Title>
                 <div className="space-y-3">
                   <div className="flex items-center space-x-3">
                     <div className="w-3 h-3 bg-[rgb(158,206,106)] rounded-full animate-pulse"></div>
-                    <Text className="text-[rgb(158,206,106)] font-mono">
+                    <Text className="text-[rgb(158,206,106)] font-cascadia">
                       Available for new projects
                     </Text>
                   </div>
                   <div className="flex items-center space-x-3">
                     <div className="w-3 h-3 bg-[rgb(122,162,247)] rounded-full"></div>
-                    <Text className="text-[rgb(122,162,247)] font-mono">
+                    <Text className="text-[rgb(122,162,247)] font-cascadia">
                       Response time: {"<"} 24 hours
                     </Text>
                   </div>
                   <div className="flex items-center space-x-3">
                     <div className="w-3 h-3 bg-[rgb(180,249,248)] rounded-full"></div>
-                    <Text className="text-[rgb(180,249,248)] font-mono">
+                    <Text className="text-[rgb(180,249,248)] font-cascadia">
                       Timezone: PST (UTC-8)
                     </Text>
                   </div>
@@ -312,7 +316,7 @@ const Contact: React.FC = () => {
               <Card className="bg-[rgb(26,27,38)] border border-gray-700 shadow-xl">
                 <Title
                   level={4}
-                  className="text-[rgb(158,206,106)] mb-4 font-mono"
+                  className="text-[rgb(158,206,106)] mb-4 font-cascadia"
                 >
                   Quick Stats
                 </Title>
@@ -320,22 +324,22 @@ const Contact: React.FC = () => {
                   <div>
                     <Title
                       level={3}
-                      className="text-[rgb(158,206,106)] mb-1 font-mono"
+                      className="text-[rgb(158,206,106)] mb-1 font-cascadia"
                     >
                       24h
                     </Title>
-                    <Text className="text-[rgb(122,162,247)] font-mono text-sm">
+                    <Text className="text-[rgb(122,162,247)] font-cascadia text-sm">
                       Response Time
                     </Text>
                   </div>
                   <div>
                     <Title
                       level={3}
-                      className="text-[rgb(122,162,247)] mb-1 font-mono"
+                      className="text-[rgb(122,162,247)] mb-1 font-cascadia"
                     >
                       100%
                     </Title>
-                    <Text className="text-[rgb(122,162,247)] font-mono text-sm">
+                    <Text className="text-[rgb(122,162,247)] font-cascadia text-sm">
                       Client Satisfaction
                     </Text>
                   </div>
@@ -349,10 +353,10 @@ const Contact: React.FC = () => {
         <div className="mt-16 text-center">
           <Card className="bg-gradient-to-r from-[rgb(26,27,38)] to-gray-800 border border-gray-700 shadow-2xl">
             <div className="py-8">
-              <Title level={3} className="text-white mb-4 font-mono">
+              <Title level={3} className="text-white mb-4 font-cascadia">
                 Ready to start your project?
               </Title>
-              <Paragraph className="text-gray-300 text-lg mb-6 max-w-2xl mx-auto font-mono">
+              <Paragraph className="text-gray-300 text-lg mb-6 max-w-2xl mx-auto font-cascadia">
                 Whether you need a complete web application, API development, or
                 technical consultation, I'm here to help bring your ideas to
                 life with clean, scalable code.
@@ -362,7 +366,7 @@ const Contact: React.FC = () => {
                   type="primary"
                   size="large"
                   icon={<MailOutlined />}
-                  className="bg-[rgb(158,206,106)] hover:bg-[rgb(158,206,106)]/80 border-none text-black font-mono"
+                  className="bg-[rgb(158,206,106)] hover:bg-[rgb(158,206,106)]/80 border-none text-black font-cascadia"
                   onClick={() =>
                     document
                       .querySelector("form")
@@ -373,7 +377,7 @@ const Contact: React.FC = () => {
                 </Button>
                 <Button
                   size="large"
-                  className="border-[rgb(158,206,106)] text-[rgb(158,206,106)] hover:bg-[rgb(158,206,106)] hover:text-black font-mono"
+                  className="border-[rgb(158,206,106)] text-[rgb(158,206,106)] hover:bg-[rgb(158,206,106)] hover:text-black font-cascadia"
                 >
                   View Portfolio
                 </Button>
